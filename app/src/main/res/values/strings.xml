@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="app_name">IRCTC</string>
+
+    <string name="country_prompt">Choose number</string>
+
+    <string-array name="country_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <string name="berth">Choose a berth</string>
+
+    <string-array name="country_arrays_berth">
+        <item>LB</item>
+        <item>MB</item>
+        <item>UB</item>
+        <item>SiL</item>
+        <item>SiU</item>
+    </string-array>
+
+    <string name="string_permission_help">Help</string>
+    <string name="string_permission_help_text">The permission is missing.\n\nTo grant this permission click on Settings, then Permissions and turn the permission on.\n\nThen click back twice to return to the app</string>
+    <string name="string_permission_quit">Exit App</string>
+    <string name="string_settings">Settings</string>
+
+
+</resources>

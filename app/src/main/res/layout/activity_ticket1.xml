@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="18dp">
+
+        <TextView
+            android:id="@+id/train_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Train name"
+            android:textColor="#323232"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Availability"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Price"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Class"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Availability"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:id="@+id/availibility"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Price"
+                android:textSize="18dp"
+                android:id="@+id/pr"
+                android:textAlignment="center"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sleeper"
+                android:textSize="18dp"
+                android:id="@+id/ticket_type"
+                android:textAlignment="center"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Number Of Tickets"
+                android:id="@+id/number"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:entries="@array/country_arrays"
+                android:textAlignment="center"
+                android:paddingStart="40dp"
+                android:layout_weight="1"
+                android:id="@+id/spinner">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:drawableLeft="@drawable/user"
+            android:background="@drawable/sub_bg"
+            android:hint="User_id"
+            android:inputType="textCapSentences"/>
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:drawableLeft="@drawable/user"
+            android:background="@drawable/sub_bg"
+            android:hint="Age"
+            android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/mob_no"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:drawableLeft="@drawable/user"
+                android:background="@drawable/sub_bg"
+                android:hint="Mobile Number"
+                android:inputType="number"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Berth Type"
+                android:id="@+id/berth"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:entries="@array/country_arrays_berth"
+                android:textAlignment="center"
+                android:paddingStart="40dp"
+                android:layout_weight="1"
+                android:id="@+id/spinner_berth">
+
+            </Spinner>
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cont"
+            android:text="Continue"
+            android:background="@drawable/price_background"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>
